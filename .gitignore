@@ -1,0 +1,17 @@
+# Segredos e configuração local
+.env
+.env.*
+!.env.example
+
+# Dados persistentes dos jogadores (não versionar)
+banco_de_dados.json
+personagens.json
+
+# Arquivos gerados
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.log
+.DS_Store
