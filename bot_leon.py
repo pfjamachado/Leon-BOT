@@ -4,6 +4,7 @@ import discord
 from discord.ext import commands
 import traceback
 import os
+from dotenv import load_dotenv
 
 
 # ============================================================
@@ -284,7 +285,8 @@ bot = LeonBot()
 
 if __name__ == '__main__':
 
-    # Configure DISCORD_TOKEN no ambiente antes de iniciar o Leon.
+    # Aceita DISCORD_TOKEN no ambiente ou no .env privado da hospedagem.
+    load_dotenv()
     TOKEN = os.getenv("DISCORD_TOKEN", "").strip()
     if not TOKEN:
 
