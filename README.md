@@ -12,7 +12,7 @@ Bot de RPG para Discord, em Python. Contém módulos de personagens, economia e 
 
 1. Instale dependências: `python -m pip install -r requirements.txt`.
 2. **Revogue/regere o token que estava no ZIP original** no Discord Developer Portal. Não reutilize esse token.
-3. Configure a variável de ambiente `DISCORD_TOKEN` com o novo token (pode usar as variáveis da sua hospedagem ou um arquivo `.env` carregado pelo ambiente de execução). O programa **não carrega `.env` automaticamente**.
+3. Configure a variável de ambiente `DISCORD_TOKEN` com o novo token (pode usar as variáveis da sua hospedagem ou um arquivo `.env` carregado pelo ambiente de execução). O programa também carrega `.env` privado com `python-dotenv`.
 4. Ajuste as constantes `ID_CANAL_LOJA`, `ID_MENSAGEM_LOJA` e `ID_CANAL_CU` em `bot_leon.py` se o bot for usado em outro servidor.
 5. Inicie com `python bot_leon.py`.
 
