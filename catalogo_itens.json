@@ -1,0 +1,167 @@
+{
+    "bencaodearrascaeta": {
+        "nome": "Benção de Arrascaeta",
+        "descricao": "Permite rolar novamente um d20 e manter o melhor valor. Não pode ser usado em falhas críticas.",
+        "emoji": "✨"
+    },
+    "euquerofazermagia": {
+        "nome": "Eu Quero Fazer Magia",
+        "descricao": "Recupera um espaço de magia de nível 1. Pode ser usado simultaneamente para níveis maiores.",
+        "emoji": "🔮"
+    },
+    "alentodomolungo": {
+        "nome": "Alento do Molungo",
+        "descricao": "Recupera 10% dos pontos de vida de um personagem.",
+        "emoji": "❤️"
+    },
+    "percepcaoextrassensorial": {
+        "nome": "Percepção Extrassensorial",
+        "descricao": "O mestre responde uma pergunta extrajogo.",
+        "emoji": "👁️"
+    },
+    "naopresteiatencao": {
+        "nome": "Não Prestei Atenção",
+        "descricao": "O mestre te lembra de uma informação que foi dita e você devia saber.",
+        "emoji": "❓"
+    },
+    "bonusdinamico": {
+        "nome": "Bônus Dinâmico",
+        "descricao": "Você passa automaticamente em um teste existente.",
+        "emoji": "🏆"
+    },
+    "jogoextra": {
+        "nome": "Jogo Extra",
+        "descricao": "O mestre marca uma sessão extra na semana (requer 75% de apoio).",
+        "emoji": "📅"
+    },
+    "naomemoleste": {
+        "nome": "Não Me Moleste",
+        "descricao": "Garante viagem sem intercorrências no caminho.",
+        "emoji": "🚶"
+    },
+    "eumeperdoei": {
+        "nome": "Eu Me Perdoei",
+        "descricao": "Por uma cena, um alvo esquece qualquer lembrança negativa com o usuário.",
+        "emoji": "😇"
+    },
+    "fenixrubronegra": {
+        "nome": "Fênix Rubro-Negra",
+        "descricao": "Personagem morto ressuscita com vida cheia e sem sequelas.",
+        "emoji": "🔥"
+    },
+    "hiperestadodotempoinfinito": {
+        "nome": "Hiperestado do Tempo Infinito",
+        "descricao": "Reduz em 2/3 o tempo de uma atividade de downtime.",
+        "emoji": "⏳"
+    },
+    "drogaeothomas": {
+        "nome": "Droga, é o Thomas",
+        "descricao": "Teletransporte instantâneo para lugar ao ar livre (Material/Fadas).",
+        "emoji": "🏇"
+    },
+    "centelhadolider": {
+        "nome": "Centelha do Líder",
+        "descricao": "Permite criar um NPC para o universo da campanha.",
+        "emoji": "👑"
+    },
+    "grossomodo": {
+        "nome": "Grosso Modo",
+        "descricao": "NPC acredita automaticamente em uma batatada de nível médio.",
+        "emoji": "👂"
+    },
+    "bencaodezico": {
+        "nome": "Benção de Zico",
+        "descricao": "Permite rolar novamente uma falha crítica em um d20.",
+        "emoji": "⚽"
+    },
+    "rezabraba": {
+        "nome": "Reza Braba",
+        "descricao": "Aumenta em 10% as chances de sucesso num d100.",
+        "emoji": "🙏"
+    },
+    "encontroinesperado": {
+        "nome": "Encontro Inesperado",
+        "descricao": "Reencontra um NPC já visto anteriormente.",
+        "emoji": "📅"
+    },
+    "asasdefada": {
+        "nome": "Asas de Fada",
+        "descricao": "Teleporte instantâneo para até 60ft da posição atual.",
+        "emoji": "🧚"
+    },
+    "tempocongelado": {
+        "nome": "Tempo Congelado",
+        "descricao": "O tempo congela por 5s. Apenas o jogador age.",
+        "emoji": "❄️"
+    },
+    "proeminenciaarcana": {
+        "nome": "Proeminência Arcana",
+        "descricao": "Dano dobrado ao estar com 15% ou menos da vida máxima.",
+        "emoji": "💥"
+    },
+    "registrofractal": {
+        "nome": "Registro Fractal",
+        "descricao": "Acesso a um lugar, item ou criatura que já não existe.",
+        "emoji": "📜"
+    },
+    "vontadequaseauspiciosa": {
+        "nome": "Vontade Quase Auspiciosa",
+        "descricao": "Recupera 3 Pontos de Vontade.",
+        "emoji": "🔮"
+    },
+    "obonus": {
+        "nome": "O Bônus",
+        "descricao": "Adicione +1 d10 a uma rolagem de Ataque, Defesa ou Iniciativa.",
+        "emoji": "👁️"
+    },
+    "mentalidadedecampeao": {
+        "nome": "Mentalidade de Campeão",
+        "descricao": "Dobra a efetividade de qualquer treinamento.",
+        "emoji": "✨"
+    },
+    "mestremaximoff": {
+        "nome": "Mestre Maximoff",
+        "descricao": "Concede três pontos ao Background 'Mentor'.",
+        "emoji": "🔮"
+    },
+    "monsterbranco": {
+        "nome": "Monster Branco",
+        "descricao": "Anula a necessidade de um período de sono.",
+        "emoji": "😴"
+    },
+    "bencaodeepstein": {
+        "nome": "Benção de Epstein",
+        "descricao": "Adiciona 2 pontos do Background \"Aliado\". O aliado deve ser menor de 15 anos.",
+        "emoji": "👦"
+    },
+    "elescriaramapropriamoeda": {
+        "nome": "Eles Criaram a Própria Moeda",
+        "descricao": "Dá ao personagem uma Coroa de Prata",
+        "emoji": "🪙"
+    },
+    "informacaoprivilegiada": {
+        "nome": "Informação Privilegiada",
+        "descricao": "Dá ao personagem uma informação que o jogador tem fora do jogo.",
+        "emoji": "ℹ️"
+    },
+    "harmonizacaofacial": {
+        "nome": "Harmonização Facial",
+        "descricao": "Permite trocar a faceclaim de um personagem. Adicionalmente, concede 1 ponto no background \"Aparência\".",
+        "emoji": "😊"
+    },
+    "therealcu": {
+        "nome": "The Real C.U",
+        "descricao": "O personagem poderá estar portando consigo um objeto mundano que não tinha antes. O objeto deverá ter peso, tamanho e valor compatíveis com a realidade.",
+        "emoji": "📦"
+    },
+    "penetraautorizada": {
+        "nome": "Penetra Autorizada",
+        "descricao": "O personagem ganha um convite para a festa de aniversário Thomas Blackshaw.",
+        "emoji": "📨"
+    },
+    "roteiristapreguicoso": {
+        "nome": "Roteirista Preguiçoso",
+        "descricao": "Permite ao jogador escolher uma conveniência de roteiro.",
+        "emoji": "📝"
+    }
+}
