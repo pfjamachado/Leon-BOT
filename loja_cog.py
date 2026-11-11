@@ -831,18 +831,29 @@ class ShopView(discord.ui.View):
             self.add_item(proxima)
 
     async def categoria_callback(self, interaction):
-        self.categoria_atual = interaction.data["custom_id"][4:]
-        self.pagina_atual = 0
-        self.atualizar_view()
-        await interaction.response.edit_message(embed=self.criar_embed_pagina_atual(), view=self)
+        # Não remova componentes de uma View já registrada no discord.py.
+        # Isso deixa botões antigos no ViewStore apontando para view=None,
+        # provocando "View interaction referencing unknown view".
+        categoria = interaction.data["custom_id"][4:]
+        if categoria not in self.categorias:
+            return await interaction.response.send_message(
+                "Esta categoria não está mais disponível. Atualize a loja.", ephemeral=True
+            )
+        nova_view = ShopView(self.bot, categoria_atual=categoria, pagina_atual=0)
+        await interaction.response.edit_message(
+            embed=nova_view.criar_embed_pagina_atual(), view=nova_view
+        )
 
     async def navegacao_callback(self, interaction):
-        if interaction.data["custom_id"] == "pagina_proxima":
-            self.pagina_atual += 1
-        else:
-            self.pagina_atual -= 1
-        self.atualizar_view()
-        await interaction.response.edit_message(embed=self.criar_embed_pagina_atual(), view=self)
+        deslocamento = 1 if interaction.data["custom_id"] == "pagina_proxima" else -1
+        nova_view = ShopView(
+            self.bot,
+            categoria_atual=self.categoria_atual,
+            pagina_atual=self.pagina_atual + deslocamento,
+        )
+        await interaction.response.edit_message(
+            embed=nova_view.criar_embed_pagina_atual(), view=nova_view
+        )
 
     async def compra_callback(self, interaction):
         item_id = interaction.data["custom_id"][4:]
@@ -901,10 +912,15 @@ class ShopView(discord.ui.View):
             linhas.append(f"Estoque global restante: **{venda['estoque_restante']}**.")
         await interaction.response.send_message("\n".join(linhas), ephemeral=True)
 
-        # Atualiza a mensagem clicada imediatamente para refletir o estoque.
+        # Substitui a View por uma nova instância: não invalida os botões
+        # registrados para esta mensagem ao atualizar o estoque.
         try:
-            self.atualizar_view()
-            await interaction.message.edit(embed=self.criar_embed_pagina_atual(), view=self)
+            nova_view = ShopView(
+                self.bot, categoria_atual=self.categoria_atual, pagina_atual=self.pagina_atual
+            )
+            await interaction.message.edit(
+                embed=nova_view.criar_embed_pagina_atual(), view=nova_view
+            )
         except discord.HTTPException:
             pass
 
