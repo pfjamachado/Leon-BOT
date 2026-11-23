@@ -839,19 +839,25 @@ class ShopView(discord.ui.View):
             return await interaction.response.send_message(
                 "Esta categoria não está mais disponível. Atualize a loja.", ephemeral=True
             )
+
+        # Reconhece o clique imediatamente para evitar o prazo de 3 segundos
+        # da interação do Discord antes de montar e editar a loja.
+        await interaction.response.defer()
         nova_view = ShopView(self.bot, categoria_atual=categoria, pagina_atual=0)
-        await interaction.response.edit_message(
+        await interaction.edit_original_response(
             embed=nova_view.criar_embed_pagina_atual(), view=nova_view
         )
 
     async def navegacao_callback(self, interaction):
+        # A navegação também reconhece o clique antes de atualizar a mensagem.
+        await interaction.response.defer()
         deslocamento = 1 if interaction.data["custom_id"] == "pagina_proxima" else -1
         nova_view = ShopView(
             self.bot,
             categoria_atual=self.categoria_atual,
             pagina_atual=self.pagina_atual + deslocamento,
         )
-        await interaction.response.edit_message(
+        await interaction.edit_original_response(
             embed=nova_view.criar_embed_pagina_atual(), view=nova_view
         )
 
